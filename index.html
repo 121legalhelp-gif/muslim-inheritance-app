@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faraid Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Islamic Inheritance</p>
+          <h1>Faraid Calculator</h1>
+        </div>
+        <div class="badge">Qur'an & Sunnah-based</div>
+      </header>
+
+      <main class="layout">
+        <section class="panel form-panel">
+          <h2>Estate Details</h2>
+
+          <div class="field-grid">
+            <label>
+              Total Estate (AED)
+              <input id="estate" type="number" min="0" step="0.01" value="250000" />
+            </label>
+
+            <label>
+              Debts (AED)
+              <input id="debts" type="number" min="0" step="0.01" value="15000" />
+            </label>
+
+            <label>
+              Funeral Costs (AED)
+              <input id="funeral" type="number" min="0" step="0.01" value="5000" />
+            </label>
+
+            <label>
+              Bequest (AED)
+              <input id="bequest" type="number" min="0" step="0.01" value="0" />
+            </label>
+          </div>
+
+          <h2>Heirs</h2>
+
+          <div class="field-grid compact">
+            <label>
+              Spouse
+              <select id="spouseType">
+                <option value="none">None</option>
+                <option value="husband">Husband</option>
+                <option value="wife" selected>Wife</option>
+              </select>
+            </label>
+
+            <label>
+              Father
+              <select id="father">
+                <option value="yes" selected>Yes</option>
+                <option value="no">No</option>
+              </select>
+            </label>
+
+            <label>
+              Mother
+              <select id="mother">
+                <option value="yes" selected>Yes</option>
+                <option value="no">No</option>
+              </select>
+            </label>
+
+            <label>
+              Sons
+              <input id="sons" type="number" min="0" step="1" value="2" />
+            </label>
+
+            <label>
+              Daughters
+              <input id="daughters" type="number" min="0" step="1" value="1" />
+            </label>
+
+            <label>
+              Full Brothers
+              <input id="fullBrothers" type="number" min="0" step="1" value="0" />
+            </label>
+
+            <label>
+              Full Sisters
+              <input id="fullSisters" type="number" min="0" step="1" value="0" />
+            </label>
+          </div>
+
+          <div class="actions">
+            <button id="calculateBtn" type="button">Calculate Shares</button>
+            <button id="resetBtn" type="button" class="secondary">Reset</button>
+          </div>
+        </section>
+
+        <section class="panel result-panel">
+          <h2>Results</h2>
+
+          <div class="summary-cards">
+            <div class="card">
+              <span>Net Estate</span>
+              <strong id="netEstateValue">0.00</strong>
+            </div>
+            <div class="card">
+              <span>Remaining for Heirs</span>
+              <strong id="remainingValue">0.00</strong>
+            </div>
+          </div>
+
+          <div class="result-box">
+            <h3>Heir Shares</h3>
+            <div id="resultsTable" class="results-table"></div>
+          </div>
+
+          <div class="notes-box">
+            <h3>Important Notes</h3>
+            <ul>
+              <li>This tool focuses on common faraid cases in authentic Qur’an and Sunnah.</li>
+              <li>Spouse, parents, children, and basic sibling scenarios are included.</li>
+              <li>Complex or disputed inheritance details should be reviewed by a qualified Islamic scholar or local legal advisor.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
